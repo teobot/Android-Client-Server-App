@@ -1,4 +1,5 @@
 # Android-Client-Server-App
+![Cover image of the project](https://raw.githubusercontent.com/teobot/Android-Client-Server-App/main/banner-main.png)
 
 ## Project Information
 *Unit title*: **Advanced Programming**  
