@@ -2,7 +2,7 @@
 ![Cover image of the project](https://raw.githubusercontent.com/teobot/Android-Client-Server-App/main/banner-main.png)
 
 ## Project Information
-*Github Link*: [Link To Repo](https://github.com/teobot/Android-Client-Server-App)  
+*Github Link*: [Link to project](https://github.com/teobot/Android-Client-Server-App)  
 *Unit title*: **Advanced Programming**  
 *Project Language*: **Java**  
 *Assignment set by*: **K. Welsh**  
