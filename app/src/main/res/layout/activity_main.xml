@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/latLngDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Loading Location ..."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_based_scroll_display" />
+
+    <Button
+        android:id="@+id/refreshContent2"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:onClick="stations_refresh_onClick"
+        android:text="@android:string/search_go"
+        app:layout_constraintBottom_toTopOf="@+id/latLngDisplay"
+        app:layout_constraintStart_toStartOf="@+id/text_based_scroll_display"
+        app:layout_constraintTop_toBottomOf="@+id/text_based_scroll_display" />
+
+    <ScrollView
+        android:id="@+id/text_based_scroll_display"
+        android:layout_width="380dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="172dp"
+        android:background="#FFFAFA"
+        app:layout_constraintBottom_toTopOf="@+id/latLngDisplay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/text_based_display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/change_display_button"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:onClick="change_display"
+        android:text="VIEW BY TEXT"
+        app:layout_constraintBottom_toTopOf="@+id/latLngDisplay"
+        app:layout_constraintEnd_toEndOf="@+id/text_based_scroll_display"
+        app:layout_constraintStart_toEndOf="@+id/refreshContent2"
+        app:layout_constraintTop_toBottomOf="@+id/text_based_scroll_display" />
+
+    <LinearLayout
+        android:id="@+id/map_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/text_based_scroll_display"
+        app:layout_constraintEnd_toEndOf="@+id/text_based_scroll_display"
+        app:layout_constraintStart_toStartOf="@+id/text_based_scroll_display"
+        app:layout_constraintTop_toTopOf="@+id/text_based_scroll_display">
+
+        <com.mapbox.mapboxsdk.maps.MapView
+            android:id="@+id/mapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
