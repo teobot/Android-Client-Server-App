@@ -79,5 +79,10 @@ I implemented threading, this is where a method will be sent off to another syst
 ### Results
 I achieved the overall mark on **97%** for this hackathon assignment. 
 #### Result Comments
->This looks like a very good attempt at the hackathon task, almost completing everything within the time-frame \n\n I particularly liked the use of a LatLngBounds to dynamically zoom the map camera to fit stations on the screen. \n\n The only issue I spotted was that you didn't use the strings.xml file correctly to store your hard-coded strings.
-You could perhaps have separated the mapping code out more effectively using the decorator pattern, too. \n\n These really are very minor things, and given the time constraint under which you were working, I'm delighted with the work.
+> This looks like a very good attempt at the hackathon task, almost completing everything within the time-frame
+>  
+> I particularly liked the use of a LatLngBounds to dynamically zoom the map camera to fit stations on the screen. 
+>  
+> The only issue I spotted was that you didn't use the strings.xml file correctly to store your hard-coded strings. You could perhaps have separated the mapping code out more effectively using the decorator pattern, too. 
+>  
+> These really are very minor things, and given the time constraint under which you were working, I'm delighted with the work.
